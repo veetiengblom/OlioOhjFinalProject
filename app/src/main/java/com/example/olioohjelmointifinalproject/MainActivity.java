@@ -8,12 +8,10 @@ import android.view.View;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
 import android.content.Context;
-import android.widget.TextView;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
-import java.time.temporal.TemporalAccessor;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //Writes saved firms data to csv
+    //Add favorites button to this
     public void writeFile(View v){
         try {
             OutputStreamWriter ows = new OutputStreamWriter(context.openFileOutput("savedFirms2.csv", context.MODE_APPEND));
